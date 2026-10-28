@@ -1,1 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MatchingBird</title>
+    <meta name="description" content="Official Privacy Policy for MatchingBird dating and social discovery application. Learn how we collect, protect, and respect your personal information.">
+    <style>
+        :root {
+            --primary: #E8725C;
+            --primary-hover: #D45B45;
+            --bg-dark: #0F1114;
+            --surface-dark: #181A1F;
+            --surface-elevated: #22252C;
+            --text-primary: #F5F7FA;
+            --text-secondary: #9BA3AF;
+            --text-tertiary: #6B7280;
+            --border-subtle: #2A2E37;
+            --border-highlight: rgba(232, 114, 92, 0.25);
+            --badge-bg: rgba(232, 114, 92, 0.12);
+            --success: #34D399;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 24px 80px 24px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 32px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--badge-bg);
+            border: 1px solid var(--border-highlight);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            color: var(--text-primary);
+            font-size: 34px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .meta-bar {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .nav-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .nav-pill {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .nav-pill.active {
+            background-color: var(--primary);
+            color: #FFFFFF;
+        }
+
+        .nav-pill:not(.active) {
+            background-color: var(--surface-dark);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .nav-pill:not(.active):hover {
+            color: var(--text-primary);
+            border-color: var(--text-secondary);
+        }
+
+        .summary-card {
+            background: linear-gradient(145deg, var(--surface-dark), var(--surface-elevated));
+            border: 1px solid var(--border-highlight);
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            margin: 28px 0 36px 0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        .summary-card h3 {
+            color: var(--primary);
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .summary-card li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .summary-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        h2 {
+            color: var(--text-primary);
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--badge-bg);
+            color: var(--primary);
+            border-radius: 50%;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 14px;
+            line-height: 1.65;
+        }
+
+        ul, ol {
+            padding-left: 22px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 8px;
+            line-height: 1.55;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .step-box {
+            background-color: var(--surface-dark);
+            border: 1px solid var(--border-subtle);
+            border-left: 4px solid var(--primary);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin: 18px 0;
+        }
+
+        .step-box strong {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+            font-size: 15px;
+        }
+
+        .step-box p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .provider-card {
+            background-color: var(--surface-dark);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 18px;
+        }
+
+        .provider-card h4 {
+            color: var(--text-primary);
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .provider-card p {
+            font-size: 13px;
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        .legal-notice {
+            background: rgba(232, 114, 92, 0.08);
+            border: 1px dashed var(--border-highlight);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            margin: 20px 0;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-tertiary);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 28px 16px 60px 16px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand-badge">Official Legal Document</div>
+            <h1>Matching<span>Bird</span> Privacy Policy</h1>
+            <div class="meta-bar">Effective Date: October 28, 2026 • Version 1.0</div>
+            <div class="nav-pills">
+                <a href="privacy-policy.html" class="nav-pill active">Privacy Policy</a>
+                <a href="terms-of-service.html" class="nav-pill">Terms of Service</a>
+            </div>
+        </header>
+
+        <p>Welcome to <strong>MatchingBird</strong> ("we", "our", or "us"). We are committed to safeguarding your personal privacy and protecting the information you share while using the MatchingBird dating and social discovery platform ("App" or "Service").</p>
+
+        <p>This Privacy Policy explains in detail what customer information we collect, why we collect it, how your data is processed, which trusted infrastructure providers process it, how you may exercise your rights (including complete, self-serve account deletion), and how you can contact our privacy operator.</p>
+
+        <div class="summary-card">
+            <h3>Key Privacy Commitments</h3>
+            <ul>
+                <li><strong>No Sale of Personal Data:</strong> We never sell, rent, or trade your personal information or private messages to third parties.</li>
+                <li><strong>Complete Self-Serve Deletion:</strong> You can permanently delete your account, matches, media, and conversations directly inside the app at any time with immediate effect.</li>
+                <li><strong>Encrypted Storage & Transit:</strong> Your personal information is encrypted in transit using TLS 1.3 and at rest using AES-256 cloud encryption.</li>
+                <li><strong>Strictly 18+:</strong> MatchingBird is exclusively for adults aged 18 and older. Minor accounts are strictly prohibited and immediately terminated.</li>
+                <li><strong>Transparent Guest Access:</strong> Guest / Reviewer sessions are authenticated securely and can be removed or upgraded seamlessly.</li>
+            </ul>
+        </div>
+
+        <h2><span class="section-num">1</span> Application Operator & Privacy Contact</h2>
+        <p>MatchingBird is developed and operated by the following independent application developer:</p>
+        <div class="step-box">
+            <strong>Operating Developer:</strong>
+            <p><strong>Akshat (MatchingBird Developer)</strong></p>
+            <p>Support & Privacy Contact: <a href="mailto:akshatearnyt17@gmail.com" style="color: var(--primary);">akshatearnyt17@gmail.com</a></p>
+            <p>Official Legal Repository: <a href="https://github.com/17akshat05/matchingbird-privacy" style="color: var(--primary);">https://github.com/17akshat05/matchingbird-privacy</a></p>
+            <p>Public Policy URL: <a href="https://17akshat05.github.io/matchingbird-privacy/privacy-policy.html" style="color: var(--primary);">https://17akshat05.github.io/matchingbird-privacy/privacy-policy.html</a></p>
+        </div>
+        <p class="legal-notice"><em>Note to Amazon Appstore Reviewers:</em> For any developer verification or compliance inquiries, please contact the developer directly at <code>akshatearnyt17@gmail.com</code>.</p>
+
+        <h2><span class="section-num">2</span> Information We Collect and Why</h2>
+        <p>We collect customer information solely to operate, personalize, and secure the dating and matching experience. Information is grouped into the following categories:</p>
+
+        <h3>A. Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Authentication & Identity Identifiers:</strong> Unique user identifier (UID), email address, and authentication provider metadata via Google OAuth, Email/Password, or Guest Sign In.</li>
+            <li><strong>Profile Details:</strong> Display name, age / date of birth, gender, connection preferences (e.g. Man, Woman, Everyone), written personal bio, interest tags, and responses to profile prompt cards.</li>
+            <li><strong>Uploaded Photos & Gallery Media:</strong> Profile photos uploaded to your gallery and selected avatar personalization frames.</li>
+            <li><strong>Interactions & Messages:</strong> Right/left swipes, mutual matches, chat messages, game invitations, and in-app rivalry events.</li>
+        </ul>
+
+        <h3>B. Information Collected Automatically</h3>
+        <ul>
+            <li><strong>Geographical Location:</strong> With your permission, your device's approximate GPS coordinates are converted into an encrypted geohash to calculate distance to potential matches within your discovery radius (e.g., 10km to 100km). You can also manually choose a discovery city or adjust distance visibility in Settings.</li>
+            <li><strong>Device & Telemetry Information:</strong> Device model, manufacturer, Android/Fire OS version, app version code, screen dimensions, and diagnostic crash logs to maintain stability, prevent bots, and ensure multi-device synchronization.</li>
+        </ul>
+
+        <h2><span class="section-num">3</span> Authentication & Guest Account Architecture</h2>
+        <p>MatchingBird supports three secure authentication methods:</p>
+        <ol>
+            <li><strong>Google Sign-In:</strong> Secure OAuth 2.0 flow verifying your identity via Google Identity Services without exposing your Google account password.</li>
+            <li><strong>Email & Password Sign-In:</strong> Secure email authentication with PBKDF2/Argon2 cloud password hashing.</li>
+            <li><strong>Guest Sign-In / Reviewer Access:</strong> Creates an isolated anonymous or device-backed Firebase authentication session. Guest sessions allow exploring the app without sharing an email address. Guest accounts have the same strict data isolation and can be permanently deleted at any time.</li>
+        </ol>
+
+        <h2><span class="section-num">4</span> Third-Party Service Providers & Data Processing</h2>
+        <p>We partner with industry-leading, SOC 2 / ISO 27001 certified cloud infrastructure providers under strict Data Processing Agreements:</p>
+
+        <div class="badge-grid">
+            <div class="provider-card">
+                <h4>Google Firebase & Google Cloud</h4>
+                <p><strong>Role:</strong> User authentication, Cloud Firestore encrypted database, and backend infrastructure.</p>
+                <p><strong>Data:</strong> Auth credentials, profile document, swipes, and messages.</p>
+            </div>
+            <div class="provider-card">
+                <h4>Supabase Inc.</h4>
+                <p><strong>Role:</strong> Encrypted object storage bucket for profile media assets.</p>
+                <p><strong>Data:</strong> User profile photos uploaded to dedicated private storage buckets.</p>
+            </div>
+            <div class="provider-card">
+                <h4>Google Mobile Ads (AdMob)</h4>
+                <p><strong>Role:</strong> Privacy-compliant rewarded ad experiences.</p>
+                <p><strong>Data:</strong> Non-personalized ad request identifiers complying with COPPA and privacy frameworks.</p>
+            </div>
+        </div>
+
+        <h2><span class="section-num">5</span> Data Retention & Permanent Account Deletion</h2>
+        <p>You have full autonomy over your data. We retain your personal customer information only for as long as your account remains active.</p>
+
+        <div class="step-box">
+            <strong>How to permanently delete your account & data inside the app:</strong>
+            <p>1. Open <strong>MatchingBird</strong>.</p>
+            <p>2. Tap the <strong>Profile</strong> tab in the bottom navigation.</p>
+            <p>3. Tap the <strong>Settings</strong> gear or tab.</p>
+            <p>4. Scroll to the <strong>Account Management</strong> section and tap <strong>Delete Account Permanently</strong>.</p>
+            <p>5. Confirm your deletion in the confirmation dialog.</p>
+        </div>
+
+        <p><strong>What occurs upon account deletion:</strong></p>
+        <ul>
+            <li>Your user document and profile record in Cloud Firestore are permanently erased.</li>
+            <li>All gallery photos stored in Supabase Cloud Storage are permanently purged from the storage bucket.</li>
+            <li>Your active chats, matches, likes, and swipe history are permanently invalidated and removed.</li>
+            <li>Your Firebase Authentication account is deleted, revoking all active session tokens immediately.</li>
+        </ul>
+
+        <h2><span class="section-num">6</span> Security Practices & Encryption</h2>
+        <p>We deploy defense-in-depth security practices:</p>
+        <ul>
+            <li><strong>Data in Transit:</strong> All client-to-backend communications utilize HTTPS/TLS 1.3 cryptographic transport.</li>
+            <li><strong>Data at Rest:</strong> Cloud databases and object storage volumes are encrypted with AES-256 standard encryption.</li>
+            <li><strong>Row-Level Security & Granular Rules:</strong> Cloud Firestore security rules enforce that users can only read or modify records belonging to their authenticated UID. Private chat messages are restricted strictly to the two matched participants.</li>
+            <li><strong>Zero Client Secrets:</strong> No service-role keys or master API secrets are bundled in the mobile application.</li>
+        </ul>
+
+        <h2><span class="section-num">7</span> Age Restriction (Strictly 18+)</h2>
+        <p>MatchingBird is an adult social discovery and dating service. It is strictly prohibited for individuals under eighteen (18) years of age. We do not knowingly solicit or collect personal information from minors. If we detect an account created by a minor, the account and all associated data will be immediately and permanently terminated.</p>
+
+        <h2><span class="section-num">8</span> User Rights (GDPR, CCPA/CPRA, and Global Privacy)</h2>
+        <p>Depending on your jurisdiction, you possess the following statutory rights:</p>
+        <ul>
+            <li><strong>Right of Access:</strong> You can view all personal details stored about you within the Profile screen.</li>
+            <li><strong>Right to Rectification:</strong> You can edit and update your photos, bio, interests, and preferences at any time.</li>
+            <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can permanently purge all stored customer data via the in-app delete flow.</li>
+            <li><strong>Right to Restrict or Object:</strong> You can revoke location access through your device operating system permissions at any time.</li>
+        </ul>
+        <p>To exercise any additional data rights or request an export of your information, email our developer support desk at <code>akshatearnyt17@gmail.com</code>.</p>
+
+        <h2><span class="section-num">9</span> International Data Transfers</h2>
+        <p>MatchingBird services and cloud databases are hosted in secure enterprise data centers in the United States and global Google Cloud Platform regions. By using the Service, you acknowledge that your information may be processed in these facilities subject to standard contractual clauses.</p>
+
+        <h2><span class="section-num">10</span> Policy Updates & Notification</h2>
+        <p>We may update this Privacy Policy periodically to reflect enhancements or regulatory requirements. We will notify users of material changes via an in-app announcement banner or updated version notification before changes become effective. Your continued use of the App following notification constitutes acceptance of the revised policy.</p>
+
+        <h2><span class="section-num">11</span> How to Contact Us</h2>
+        <p>For questions, support, or privacy inquiries:</p>
+        <ul>
+            <li><strong>Developer & Privacy Contact:</strong> <a href="mailto:akshatearnyt17@gmail.com" style="color: var(--primary);">akshatearnyt17@gmail.com</a></li>
+            <li><strong>Public Legal Policy:</strong> <a href="https://17akshat05.github.io/matchingbird-privacy/privacy-policy.html" style="color: var(--primary);">https://17akshat05.github.io/matchingbird-privacy/privacy-policy.html</a></li>
+            <li><strong>Terms of Service:</strong> <a href="https://17akshat05.github.io/matchingbird-privacy/terms-of-service.html" style="color: var(--primary);">https://17akshat05.github.io/matchingbird-privacy/terms-of-service.html</a></li>
+        </ul>
+
+        <footer>
+            <p>&copy; 2026 MatchingBird. Developed by Akshat. All rights reserved.</p>
+            <p style="margin-top: 6px;"><a href="terms-of-service.html">Terms of Service</a> • <a href="privacy-policy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
